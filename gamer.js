@@ -20,6 +20,9 @@ game.push(new Juegos("gta-v " , " 1000"));
 game.push(new Juegos("gran turismo ", " 500"));
 game.push(new Juegos("Dragon ball Z ", " 700"));
 
-/*  for(const juego of game ) {
+
+for(const juego of game ) {
     juego.precioJuego();
-}; */
+}; 
+// noc como hacer para que me lea un solo producto, 
+//yo se que con el for me recorre todos los productos, pero como llamo a cada uno individualmente

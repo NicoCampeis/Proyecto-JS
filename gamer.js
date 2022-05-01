@@ -9,20 +9,29 @@
         this.vendido = false;
     }
     precioJuego(){
-        console.log (this.nombre + ([this.precio * 1.21] ) + " pesos");
+        console.log (this.nombre + "$ "+([this.precio * 1.21] ) + " pesos " + "genero: " + this.genero);
     };
 
 }
 
 const game = [];
-game.push(new Juegos("f1 ", " 300"));
-game.push(new Juegos("gta-v " , " 1000"));
-game.push(new Juegos("gran turismo ", " 500"));
-game.push(new Juegos("Dragon ball Z ", " 700"));
+game.push(new Juegos("f1 ", " 300" , "carrera" , "50"));
+game.push(new Juegos("gta-v " , " 1000 ", "Accion ", "10"));
+game.push(new Juegos("gran turismo ", " 500 ", "carrera ", "3"));
+game.push(new Juegos("Dragon ball Z ", " 700 ", "lucha ","35"));
 
+/* se busca por consola el juego que se desea ver
+console.log(game[3]); */
 
-for(const juego of game ) {
+/* se muestran todos los juegos que hay en el listado
+
+ for(const juego of game ) {
     juego.precioJuego();
 }; 
-// noc como hacer para que me lea un solo producto, 
-//yo se que con el for me recorre todos los productos, pero como llamo a cada uno individualmente
+ */
+
+// PROPIEDAD LENGTH
+//console.log(Juegos.length);
+
+//PROPIEDAD SPLICE
+console.log(game.splice(2,1)); // TENDRIA QUE MOSTRARME EL JUEGO "F1" Y "GTA" ??

@@ -1,4 +1,4 @@
-//lista de consolas - agregar despues
+//lista de consolas
 /* class Console {
     constructor(posicion, marca, modelo, capacidad, precio) {
         this.posicion = posicion
@@ -41,13 +41,13 @@ games.push(new Juego(5, "pokemon", 10));
 
 
 const mensaje = (listaProductos) => {
-    let auxMensaje = [];
-    auxMensaje.push("Elija sus productos: ");
+    let aux = [];
+    aux.push("Elija sus productos: ");
     for (let i = 0; i < listaProductos.length; i++) {
-        auxMensaje.push(listaProductos[i].tipoDeJuego());
+        aux.push(listaProductos[i].tipoDeJuego());
     }
-    auxMensaje.push("para finalizar sus selecciones igrese 0");
-        return auxMensaje.join("\n");
+    aux.push("para finalizar sus selecciones igrese 0");
+        return aux.join("\n");
 }
 
 let elegirProductos;
@@ -66,7 +66,7 @@ while ((elegirProductos > 0) && (elegirProductos <= games.length) && (!isNaN(ele
 }
 
 if (carrito.length > 0) {
-    carrito.forEach((el) => (precio += el.precio));
+    carrito.forEach((juego) => (precio += juego.precio));
     alert(`usted selecciono: \n" ${carrito.join("\n")} \n El total a pagar es: ${precio} usd`);
 }else {
     alert("nos vemos, vuelva pronto");
@@ -77,7 +77,25 @@ if (carrito.length > 0) {
 
 
 
-/*  para practicar / no me salio
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
 
 let msg = "Ingrese su opcion en número" + "\n"
 for (const consolaTotal of consola) {

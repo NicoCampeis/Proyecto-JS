@@ -27,7 +27,7 @@ class Juego {
 
 
     }
-    tipoDeJuego() {
+    toostring() {
         return `${this.id}. ${this.nombre}, ${this.precio} USD`;
     }
 }
@@ -44,7 +44,7 @@ const mensaje = (listaProductos) => {
     let aux = [];
     aux.push("Elija sus productos: ");
     for (let i = 0; i < listaProductos.length; i++) {
-        aux.push(listaProductos[i].tipoDeJuego());
+        aux.push(listaProductos[i].toostring());
     }
     aux.push("para finalizar sus selecciones igrese 0");
         return aux.join("\n");
